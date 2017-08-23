@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
-import './App.css';
-import Code_qr from './components/teacher/Qr';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Start from './components/student/Start';
+
+import HomePage from './features/teacher/containers/HomePage';
+import QrCodePage from './features/teacher/containers/QrCodePage';
+import QuestionsPage from './features/teacher/containers/QuestionsPage';
+
+import './App.css';
 
 class App extends Component {
   render() {
     return (
       <Router>
-          <main>
-              <Route exact path="/" component={Code_qr}/>
-              <Route path="/start" component={Start}/>
-          </main>
+        <main className="app">
+          <Route exact path="/" component={HomePage} />
+          <Route path="/maestro/comenzar" component={QuestionsPage} />
+          <Route path="/maestro/ingresar" component={QrCodePage} />
+        </main>
       </Router>
     );
   }
