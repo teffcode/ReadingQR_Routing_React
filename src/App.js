@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import Code_qr from './components/teacher/qr';
+import Code_qr from './components/teacher/Qr';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import start from './components/student/start';
+import Start from './components/student/Start';
 
 class App extends Component {
   render() {
@@ -10,7 +10,7 @@ class App extends Component {
       <Router>
           <main>
               <Route exact path="/" component={Code_qr}/>
-              <Route path="/start" component={start}/>
+              <Route path="/start" component={Start}/>
           </main>
       </Router>
     );

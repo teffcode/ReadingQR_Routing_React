@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router';
+import Questions from '../teacher/Questions';
 
 const Start = () => (
     <div>
-        Welcome :3
+        <Questions/>
     </div>
 );
 
