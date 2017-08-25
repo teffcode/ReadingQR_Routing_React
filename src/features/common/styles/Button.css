@@ -1,0 +1,24 @@
+.button {
+  border: none;
+  box-shadow: 3px 3px 0 #005647;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  background: #0f6c60;
+  color: white;
+  font-size: 18px;
+  outline: none;
+  position: relative;
+}
+
+.button:hover {
+  top: 1px;
+  left: 1px;
+  box-shadow: 2px 2px 0 #005647;
+}
+
+.button:active {
+  top: 2px;
+  left: 2px;
+  box-shadow: 2px 2px 0 #005647 inset;
+}

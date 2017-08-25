@@ -1,0 +1,29 @@
+.play-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.play-page-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.play-page-header h1 {
+  font-size: 48px;
+  max-width: 200px;
+  color: white;
+  margin: 20px;
+}
+
+.play-page-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.play-page-emojis {
+  font-size: 40px;
+}

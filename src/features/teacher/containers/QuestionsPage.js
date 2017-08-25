@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Question from '../components/Question';
 import questions from '../../../data/questions';
+import Counter from '../../common/components/Counter';
+
+import Page from '../../common/components/Page';
 
 class QuestionsPage extends Component {
   constructor() {
@@ -69,19 +72,15 @@ class QuestionsPage extends Component {
     } = this.state;
 
     return questionStarted
-      ? <div>
-          <span>
-            {finishCounter}
-          </span>
+      ? <Page>
+          <Counter count={finishCounter} />
           <Question
             isFinished={questionFinished}
             questions={questions[currentQuestion]}
             nextQuestion={this.nextQuestion}
           />
-        </div>
-      : <span>
-          {startCounter}
-        </span>;
+        </Page>
+      : <Counter count={startCounter} size="large" />;
   }
 }
 
